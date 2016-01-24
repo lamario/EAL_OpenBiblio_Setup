@@ -25,5 +25,9 @@ Setup tutorial for OpenBiblio at EAL (you can copy-paste commands)
     * user: _obiblio_user_,  password: _obiblio_password_
     * __grant all privileges on OpenBiblio.* to obiblio_user@localhost identified by 'obiblio_password';__
 * Quit current MySQL session and login as obiblio_user
+    * __quit__
     * __mysql -u obiblio_user -p OpenBiblio__
+* Modify database credentials in the database constants file
+    * __nano /var/www/openbiblio/database_constants.php__
+    * USERNAME: _obiblio_user_,  PWD: _obiblio_password_
 * 
