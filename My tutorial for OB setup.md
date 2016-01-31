@@ -2,7 +2,7 @@
 Setup tutorial for OpenBiblio at EAL (you can copy-paste commands)
 
 1. Install a Linux Virtual Machine (e.g. Ubuntu Server)
-___
+***
 2. Use Putty - you can copy-paste commands
 ___
 3. This guide assumes you have root permissions - if not, use the __sudo__ command
