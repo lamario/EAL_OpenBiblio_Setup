@@ -5,29 +5,29 @@ Setup tutorial for OpenBiblio at EAL (you can copy-paste commands)
 * Use Putty - you can copy-paste commands
 * Once installed, download a LAMP server
     * During instalation: auto install MySQL and Apache2; or
-    * for Ubuntu: __apt-get install lamp-server^__ 
+    * for Ubuntu: __`apt-get install lamp-server^`__
 * Download OpenBiblio
-    * __wget http://downloads.sourceforge.net/project/obiblio/OpenBiblio/0.7.2/openbiblio-0.7.2.zip__
+    * __`wget http://downloads.sourceforge.net/project/obiblio/OpenBiblio/0.7.2/openbiblio-0.7.2.zip`__
 * Install unzip
-    * __apt-get install unzip__
+    * __`apt-get install unzip`__
 * Unzip openbiblio zip file
-    * __unzip openbiblio-0.7.2.zip -d /var/www/__
+    * __`unzip openbiblio-0.7.2.zip -d /var/www/`__
 * Start MySQL command line as root
-    * __mysql -u root -p__
+    * __`mysql -u root -p`__
     * enter your MySQL password
 * MySQL commands end with a semicolon ";"
 * Create a new OpenBiblio database
-    * __create database OpenBiblio /*!40100 default character set latin1 */;__
+    * __`create database OpenBiblio /*!40100 default character set latin1 */;`__
 * Verify that it worked
-    * __show database;__
+    * __`show database;`__
     * You should see a small table with "OpenBiblio"
 * Create a new MySQL user with priviliges to the OB database
     * user: _obiblio_user_,  password: _obiblio_password_
-    * __grant all privileges on OpenBiblio.* to obiblio_user@localhost identified by 'obiblio_password';__
+    * __`grant all privileges on OpenBiblio.* to obiblio_user@localhost identified by 'obiblio_password';`__
 * Quit current MySQL session and login as obiblio_user
-    * __quit__
-    * __mysql -u obiblio_user -p OpenBiblio__
+    * __`quit`__
+    * __`mysql -u obiblio_user -p OpenBiblio`__
 * Modify database credentials in the database constants file
-    * __nano /var/www/openbiblio/database_constants.php__
+    * __`nano /var/www/openbiblio/database_constants.php`__
     * USERNAME: _obiblio_user_,  PWD: _obiblio_password_
 * 
