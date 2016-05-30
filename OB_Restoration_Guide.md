@@ -9,7 +9,11 @@
 + * find `DocumentRoot /var/www/html` and replace the path
 + Second file: `/etc/apache2/apache2.conf`
 + find ```<Directory /var/www/html/>
+
 Options Indexes FollowSymLinks
+
 AllowOverride None
+
 Require all granted
+
 </Directory>``` and replace the path
